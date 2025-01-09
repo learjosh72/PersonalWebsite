@@ -1,61 +1,457 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="this is an awesome webstite">
-    <meta name="author" content="Josh">
-    <meta name="keywords" content="The Rock">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Lear</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-  </head>
   <style>
-    body {
-      font-family: Arial;
+    .bg-custom {
+        background-color: #a08cff;
+    }
+    html {
+      scroll-behavior: smooth; /* Enables smooth scrolling */
+    }
+    .hero-section {
+      background: url('spacepic.jpg') no-repeat center center/cover;
+      background-color: black;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: white;
-      background-color: #a08cff;
+      text-shadow: 0 0 10px #a08cff/*rgba(24, 72, 230, 0.7)*/;
+    }
+    .scroll-down {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 2rem;
+    }
+    .content-section {
+      height: 100vh;
+      padding: 50px;
+      background-color: #f8f9fa;
+    }
+    .hr1 {
+        background-color: #a08cff;
+        height: 4px;
+        border: none;
+    }
+    .hr2 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .font {
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 400;
+    }
+    .ptp {
+        font-size: 30px;
+    }
+    .cf {
+        font-size: 40px;
+        font-weight: 600;
+        
+    }
+    .cp {
+        background: url('purdue_bg.jpg') no-repeat center center/cover;
+    }
+    .cb {
+        border-radius: 15px;
+        border-width: 4px;
+        border-color: #262141;
+    }
+    .ib {
+        border-top-left-radius: 9px;
+        border-bottom-left-radius: 9px;
+    }
+    .ch {
+        background-color: #7563ce;
+        border-top-right-radius: 9px;
+        border-top-left-radius: 9px;
+    }
+    .ch2 {
+        background-color: #7563ce;
+        border-top-right-radius: 9px;
+    }
+    .sk {
+        background-color: #7563ce;
+        border-top-right-radius: 9px;
+        border-top-left-radius: 9px;
+        
+    }
+    .navbut {
+        background-color:#7563ce;
+        border-width: 5px;
+        border-radius: 9px; 
+        margin-bottom: 10px; 
+        margin-top: 10px;
+    }
+    .nf {
+        font-size: 35px;
+        font-weight: 600;
+        
+    }
+    body {
+        margin: 0;
+        overflow-x: hidden;
     }
   </style>
-  <body><center>
-    <h1><center><b>Joshua Lear</b></center></h1>
-    <hr>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div>
+      <h1 class="display-1 font">Joshua Lear</h1>
+      <p class="lead font">Computer Science Student</p>
+      <div class="row gx-1 justify-content-center">
+        <div class="col-4"></div>
+        <div class="col">
+            <a href="https://www.linkedin.com/in/joshua-lear-238611248/" target="_blank"><i class="h2 fab fa-linkedin text-white"></i></a>
+        </div>
+        <div class="col">
+            <a href="https://github.com/learjosh72" target="_blank"><i class="h2 fab fa-github text-white"></i></a>
+        </div>
+        <div class="col-4"></div>
+      </div>
+    </div>
+  </section>
+  <nav class="navbar navbar-expand-lg bg-custom">
+    <div class="container-fluid w-100 justify-content-center">
+      <ul class="navbar-nav d-flex w-100 justify-content-between">
+        <li class="nav-item navbut py-2">
+          <a class="nav-link nf font text-white text-center px-3 py-2" href="#about">About</a>
+        </li>
+        <li class="nav-item navbut py-2">
+          <a class="nav-link nf font text-white text-center px-3 py-2" href="#education">Education</a>
+        </li>
+        <li class="nav-item navbut py-2">
+          <a class="nav-link nf font text-white text-center px-3" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item navbut py-2">
+          <a class="nav-link nf font text-white text-center px-3" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item navbut py-2">
+          <a class="nav-link nf font text-white text-center px-3" href="#activities">Activities</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Main Content Section -->
+    <div class="container-fluid">
+        <div class="row d-flex bg-dark text-white py-5" id="about">
+            <div class="col justify-content-center text-center">
+                <div class="display-3 font">
+                    About Me
+                </div>
+                <hr class="hr1"/>
+            </div>
+            <p class="lead lh-lg font ptp px-3 px-sm-5">Current Student majoring in Computer Science and
+                Artificial Intelligence at Purdue University. Looking for
+                opportunities to develop my career skills through
+                meaningful work. My schoolwork has prepared me with
+                high level critical thinking and problem-solving skills. I have
+                developed organizational and leadership skills by
+                managing myself as well as others in numerous group
+                settings and activities.
+            </p>
+        </div>
+        <div class="row d-flex bg-dark text-white py-5" id="education">
+            <div class="col justify-content-center text-center">
+                <div class="display-3 font">
+                    Education
+                </div>
+                <hr class="hr1"/>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark justify-content-center px-3 px-sm-5 pb-5">
+            <div class="card  bg-custom text-white cb">
+                <div class="row">
+                    <div class="col-4 rounded-start d-none d-sm-inline" style="padding-right: 0px;">
+                        <img src="purdue_bg.jpg" class="img-fluid ib h-100 w-100" alt="...">
+                    </div>
+                    <div class="col-sm-8 pl-sm-0" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <div class="card-body ch d-sm-none pt-4">
+                            <div class="h5 card-title font cf text-center">Purdue University</div>
+                        </div>
+                        <div class="card-body ch2 d-none d-sm-block pt-4">
+                            <div class="h5 card-title font cf text-center">Purdue University</div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                    
+                            <p class="card-text font ptp">Major: Computer Science<br/>Concentration: Machine Intelligence<br/>Minor: Pyschology<br/>GPA: 3.68</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark text-white py-5" id="projects">
+            <div class="col justify-content-center text-center">
+                <div class="display-3 font">
+                    Projects
+                </div>
+                <hr class="hr1"/>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark justify-content-start px-3 px-sm-5 pb-5">
+            <div class="card w-75 bg-dark text-white cb">
+                <div class="row">
+                    <div class="col-4 rounded-start d-none d-sm-inline" style="padding-right: 0px;">
+                        <img src="website_cover.jpg" class="img-fluid ib h-100 w-100" alt="...">
+                    </div>
+                    <div class="col-sm-8 pl-sm-0" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <div class="card-body ch d-sm-none pt-4">
+                            <div class="h5 card-title font cf text-center">Personal Website</div>
+                        </div>
+                        <div class="card-body ch2 d-none d-sm-block pt-4">
+                            <div class="h5 card-title font cf text-center">Personal Website</div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                    
+                            <p class="card-text font ptp text-center">A website made to act as a digital portfolio for everything from projects to activities. It was made using HTML and CSS with the Bootstrap framework.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark justify-content-end px-3 px-sm-5 pb-5">
+            <div class="card w-75 bg-dark text-white cb">
+                <div class="row">
+                    <div class="col-4 rounded-start d-none d-sm-inline" style="padding-right: 0px;">
+                        <img src="main_logo.jpeg" class="img-fluid ib h-100 w-100" alt="...">
+                    </div>
+                    <div class="col-sm-8 pl-sm-0" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <div class="card-body ch d-sm-none pt-4">
+                            <div class="h5 card-title font cf text-center">Task Manager</div>
+                        </div>
+                        <div class="card-body ch2 d-none d-sm-block pt-4">
+                            <div class="h5 card-title font cf text-center">Task Manager</div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                    
+                            <p class="card-text font ptp text-center">A website where users can add tasks and organize them by date and priority. This site was made using HTML, CSS, and Javascript.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark justify-content-start px-3 px-sm-5 pb-5">
+            <div class="card w-75 bg-dark text-white cb">
+                <div class="row">
+                    <div class="col-4 rounded-start d-none d-sm-inline" style="padding-right: 0px;">
+                        <img src="exam_manager_pic.jpg" class="img-fluid ib h-100 w-100" alt="...">
+                    </div>
+                    <div class="col-sm-8 pl-sm-0" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <div class="card-body ch d-sm-none pt-4">
+                            <div class="h5 card-title font cf text-center">Exam Manager</div>
+                        </div>
+                        <div class="card-body ch2 d-none d-sm-block pt-4">
+                            <div class="h5 card-title font cf text-center">Exam Manager</div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                    
+                            <p class="card-text font ptp text-center">A web application that functions as an exam manager for schools to be able to add and delete exams from a database and for students to list if they are taking certain exams. This was made with Flask for Python for the back end, HTML, CSS, Bootstrap, and Jinja for the front end, and SQLAlchemy for SQLite for database access.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark justify-content-end px-3 px-sm-5 pb-5">
+            <div class="card w-75 bg-dark text-white cb">
+                <div class="row">
+                    <div class="col-4 rounded-start d-none d-sm-inline" style="padding-right: 0px;">
+                        <img src="compiler_pic.jpg" class="img-fluid ib h-100 w-100" alt="...">
+                    </div>
+                    <div class="col-sm-8 pl-sm-0" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <div class="card-body ch d-sm-none pt-4">
+                            <div class="h5 card-title font cf text-center">Simple C Compiler</div>
+                        </div>
+                        <div class="card-body ch2 d-none d-sm-block pt-4">
+                            <div class="h5 card-title font cf text-center">Simple C Compiler</div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                    
+                            <p class="card-text font ptp text-center">A compiler that transcribes C files into Assembly for usage. This was made using the Yacc parser with the Lex analyzer to attribute certain bits of assembly code per line of C.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark justify-content-start px-3 px-sm-5 pb-5">
+            <div class="card w-75 bg-dark text-white cb">
+                <div class="row">
+                    <div class="col-4 rounded-start d-none d-sm-inline" style="padding-right: 0px;">
+                        <img src="shell_pic.jpg" class="img-fluid ib h-100 w-100" alt="...">
+                    </div>
+                    <div class="col-sm-8 pl-sm-0" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <div class="card-body ch d-sm-none pt-4">
+                            <div class="h5 card-title font cf text-center">Shell</div>
+                        </div>
+                        <div class="card-body ch2 d-none d-sm-block pt-4">
+                            <div class="h5 card-title font cf text-center">Shell</div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                    
+                            <p class="card-text font ptp text-center">A shell to interpret command and execute them. This was made using the Yacc parser and Lex analyzer to segment commands to run through execution in C++.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark justify-content-end px-3 px-sm-5 pb-5">
+            <div class="card w-75 bg-dark text-white cb">
+                <div class="row">
+                    <div class="col-4 rounded-start d-none d-sm-inline" style="padding-right: 0px;">
+                        <img src="shoe_market_pic.jpg" class="img-fluid ib h-100 w-100" alt="...">
+                    </div>
+                    <div class="col-sm-8 pl-sm-0" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <div class="card-body ch d-sm-none pt-4">
+                            <div class="h5 card-title font cf text-center">Sneaker Marketplace</div>
+                        </div>
+                        <div class="card-body ch2 d-none d-sm-block pt-4">
+                            <div class="h5 card-title font cf text-center">Sneaker Marketplace</div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                    
+                            <p class="card-text font ptp text-center">A Java Application where users can create both buyer and seller accounts to list items and purchase items.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <h2>Education<br></h2>
-    <p>
-      <b>United Township High School</b><br>
-      GPA: 4.701<br>
-      Graduated in 2022<br>
-      Valedictiorian<br>
-      <b>Purdue University</b><br>
-      GPA: 3.78<br>
-      Graduating in 2026<br>
-    </p>
-    <h2>Projects</h2>
-    <p>
-      <b>Sneaker Marketplace</b><br>
-      A marketplace application that allows users to buy and sell products.<br>
-      <b>Calculator</b><br>
-      A basic calculator application<br>
-      <b>Task Manager</b><br>
-      A website that allows the user to add school related tasks to a list.<br>
-    </p>
- 
-    <h2><a href="https://github.com/learjosh72">GitHub</a></h2>
-  </center></body>
+
+        <div class="row d-flex bg-dark text-white py-5" id="skills">
+            <div class="col justify-content-center text-center">
+                <div class="display-3 font">
+                    Skills
+                </div>
+                <hr class="hr1"/>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark justify-content-start px-3 px-sm-5 pb-5">
+            <div class="card w-75 bg-dark text-white cb">
+                <div class="row">
+                    <div class="col-sm-12" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <div class="card-body sk justify-content-center">
+                            <p class="font cf py-2 text-center">Personal Skills</p>
+                            
+                        </div>
+                        <div class="card-body justify-content-center">
+                    
+                            <p class="card-text font ptp text-center">Communication<br/>Problem-Solving<br/>Critical Thinking<br/>Leadership</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark justify-content-end px-3 px-sm-5 pb-5">
+            <div class="card w-75 bg-dark text-white cb">
+                <div class="row">
+                    <div class="col-sm-12" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <div class="card-body sk justify-content-center">
+                            <p class="font cf py-2 text-center">Technologies</p>
+                            
+                        </div>
+                        <div class="card-body justify-content-center">
+                    
+                            
+                            <p class="card-text font ptp text-center">Proficient in:<br/>Java, C, C++, Python, SQL<br/>Intermediate in: <br/>HTML/CSS, Assembly, Neo4J, MongoDB </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+        <div class="row d-flex bg-dark text-white py-5">
+            <div class="col justify-content-center text-center" id="activities">
+                <div class="display-3 font">
+                    Activities
+                </div>
+                <hr class="hr1"/>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark justify-content-start px-3 px-sm-5 pb-5">
+            <div class="card w-75 bg-dark text-white cb">
+                <div class="row">
+                    <div class="col-4 rounded-start d-none d-sm-inline" style="padding-right: 0px;">
+                        <img src="ieee.png" class="img-fluid ib h-100 w-100" alt="...">
+                    </div>
+                    <div class="col-sm-8 pl-sm-0" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <div class="card-body ch d-sm-none pt-4">
+                            <div class="h5 card-title font cf text-center">IEEE Computer Society</div>
+                        </div>
+                        <div class="card-body ch2 d-none d-sm-block pt-4">
+                            <div class="h5 card-title font cf text-center">IEEE Computer Society</div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                    
+                            <p class="card-text font ptp text-center">Member from August 2022 - January 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark justify-content-end px-3 px-sm-5 pb-5">
+            <div class="card w-75 bg-dark text-white cb">
+                <div class="row">
+                    <div class="col-4 rounded-start d-none d-sm-inline" style="padding-right: 0px;">
+                        <img src="BBD_2.jpeg" class="img-fluid ib h-100 w-100" alt="...">
+                    </div>
+                    <div class="col-sm-8 pl-sm-0" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <div class="card-body ch d-sm-none pt-4">
+                            <div class="h5 card-title font cf text-center">Purdue University "All-American" Marching Band</div>
+                        </div>
+                        <div class="card-body ch2 d-none d-sm-block pt-4">
+                            <div class="h5 card-title font cf text-center">Purdue University "All-American" Marching Band</div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                    
+                            <p class="card-text font ptp text-center">Member from August 2023 - Current</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex bg-dark justify-content-start px-3 px-sm-5 pb-5">
+            <div class="card w-75 bg-dark text-white cb">
+                <div class="row">
+                    <div class="col-4 rounded-start d-none d-sm-inline" style="padding-right: 0px;">
+                        <img src="BoilerBrass_1-scaled.jpg" class="img-fluid ib h-100 w-100" alt="...">
+                    </div>
+                    <div class="col-sm-8 pl-sm-0" style="border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        <div class="card-body ch d-md-none pt-4">
+                            <div class="h5 card-title font cf text-center">Boiler Brass</div>
+                        </div>
+                        <div class="card-body ch2 d-none d-md-block pt-4">
+                            <div class="h5 card-title font cf text-center">Boiler Brass</div>
+                        </div>
+                        <div class="card-body justify-content-center">
+                    
+                            <p class="card-text font ptp text-center">The men's basketball athletic band as Purdue. Member from October 2022 - Current</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    
 
 
+    
+  
 
-
-
-
-
-
-
-
-
-
-
+  <!-- Bootstrap Script -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
