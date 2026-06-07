@@ -366,7 +366,25 @@ a {
     box-shadow: 0 10px 25px #a08cff;
 }
 
-.skill-card:hover .skill-details {
+
+.skill-card.expanded .skill-details {
     max-height: 200px;
     opacity: 1;
+}
+
+.skill-card.expanded {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #a08cff;
+}
+
+@media (hover: hover) {
+    .skill-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px #a08cff;
+    }
+
+    .skill-card:hover .skill-details {
+        max-height: 200px;
+        opacity: 1;
+    }
 }
