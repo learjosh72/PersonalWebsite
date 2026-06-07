@@ -236,11 +236,18 @@
     document.querySelectorAll('.skill-card').forEach(card => {
         card.addEventListener('click', () => {
 
-            
             if (window.matchMedia("(hover: none)").matches) {
-                card.classList.toggle('expanded');
-            }
 
+                const wasExpanded = card.classList.contains('expanded');
+
+                document.querySelectorAll('.skill-card').forEach(other => {
+                    other.classList.remove('expanded');
+                });
+
+                if (!wasExpanded) {
+                    card.classList.add('expanded');
+                }
+            }
         });
     });
     </script>
