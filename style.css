@@ -1,0 +1,372 @@
+.bg-custom {
+    background-color: #a08cff;
+}
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+.hero-section {
+    flex-direction: column;
+    text-align: center;  
+    background: url('spacepic-old.jpg') no-repeat center center/cover;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 10px #a08cff/*rgba(24, 72, 230, 0.7)*/;
+}
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+}
+/* .content-section {
+    height: 100vh;
+    padding: 50px;
+    background-color: #f8f9fa;
+} */
+.hr1 {
+    background-color: #a08cff;
+    height: 4px;
+    border: none;
+}
+.hr2 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.font {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+.ptp {
+    font-size: 30px;
+}
+.cf {
+    font-size: 40px;
+    font-weight: 600;
+    
+}
+.cp {
+    background: url('purdue_bg.jpg') no-repeat center center/cover;
+}
+
+.cb {
+    border-radius: 15px;
+    border-width: 4px;
+    border-color: #262141;
+}
+.ib {
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+.ch {
+    background-color: #7563ce;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+.ch2 {
+    background-color: #7563ce;
+    border-top-right-radius: 9px;
+}
+.sk {
+    background-color: #7563ce;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+    
+}
+.navbut {
+    background-color:#7563ce;
+    border-width: 5px;
+    border-radius: 9px; 
+    margin-bottom: 10px; 
+    margin-top: 10px;
+}
+.nav-item {
+    color: white;
+    font-weight: bold;
+}
+.h5 {
+    font-weight: bold;
+}
+.nav-item:hover {
+    text-shadow: 0 0 10px white;
+}
+.nf {
+    font-size: 35px;
+    font-weight: 600;
+    
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+    /* Hidden navbar */
+#mainNav {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+/* Visible navbar */
+#mainNav.show-nav {
+    transform: translateY(0);
+}
+a {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+
+        
+    background: url('spacepic-old.jpg') no-repeat center center/cover;
+    background-color: black;
+    
+    text-shadow: 0 0 10px #a08cff/*rgba(24, 72, 230, 0.7)*/;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+/* Demo content */
+.content-section {
+    padding: 100px 0;
+}
+
+
+/* Container sizing and base transition setup */
+.flip-card {
+  position: relative;
+  
+  height: 250px;
+  cursor: pointer;
+  border-radius: 15px; /* Matches Bootstrap's card corner geometry */
+  transition: box-shadow 0.25s ease-in-out, border-color 0.25s ease-in-out;
+}
+
+/* The Hover Glow Effect */
+.flip-card:hover {
+  box-shadow: 0 0 30px #a08cff; 
+             
+}
+
+/* Ensure the absolute inner components do not block the glow footprint */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  will-change: z-index;
+}
+
+/* Default State Layers */
+.flip-card:not(.flipped) .flip-card-front { z-index: 2; }
+.flip-card:not(.flipped) .flip-card-back { z-index: 1; }
+
+/* Flipped State Layers */
+.flip-card.flipped .flip-card-front { z-index: 1; }
+.flip-card.flipped .flip-card-back { z-index: 2; }
+
+/* Image scaling */
+.card-overlay-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Optional styling: Clean up the default scrollbar aesthetics for dark mode */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 6px;
+}
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.card1 {
+    
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), 
+              url('perwebcode.jpg') repeat center / 100% 100%;
+}
+.card2 {
+    
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), 
+              url('taskcode.jpg') repeat center / 100% 100%;
+}
+.card3 {
+    
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), 
+              url('examcode.jpg') repeat center / 100% 100%;
+}
+.card4 {
+    
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), 
+              url('compilercode.jpg') repeat center / 100% 100%;
+}
+.card5 {
+    
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), 
+              url('shellcode.jpg') repeat center / 100% 100%;
+}
+.card6 {
+    
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), 
+              url('sneakercode.jpg') repeat center / 100% 100%;
+}
+.card7 {
+    
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), 
+              url('erdcode.jpg') repeat center / 100% 100%;
+}
+.card8 {
+    
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), 
+              url('sneakercode.jpg') repeat center / 100% 100%;
+}
+.card9 {
+    
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), 
+              url('sneakercode.jpg') repeat center / 100% 100%;
+}
+.card10 {
+    
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95)), 
+              url('sneakercode.jpg') repeat center / 100% 100%;
+}
+
+
+.card-foot {
+    border-top-color: #262141;
+    font-weight: bold;
+    color: #a08cff;
+}
+
+
+.dropdown-item:hover {
+    background-color:#7563ce;
+}
+
+.pt-custom {
+    padding-top: 65px;
+}
+.w-65 {
+  width: 65% !important;
+}
+.w-35 {
+    width: 35% !important;
+}
+.bg-darker {
+  background-color: #272c30 !important;
+}
+.pic-bord {
+    border: 4px solid #262141;
+    border-radius: 15px;
+}
+
+.topic-grad {
+    background: linear-gradient(#212529, #262141);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.bot-wall {
+    border-bottom: 5rem solid #212529;
+}
+.drop-cov {
+    border-color: #212529;
+    border-radius: 15px;
+    background-color: #212529;
+    color: white;
+}
+.meattag:hover {
+      text-shadow: 0 0 30px #a08cff;  
+}
+.text-custom {
+    color:#a08cff;
+}
+
+.bricks {
+    color: white;
+    background-color: #212529;
+    border-radius: 15px;
+    border-width: 4px;
+    border-color: #262141;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    
+}
+
+.bg-grad {
+    background: linear-gradient(#212529,#272c30);
+}
+
+.bricks:hover {
+    box-shadow: 0 0 30px #a08cff;
+}
+
+
+.skill-card {
+    background: #272c30;
+    border: 4px solid #262141;
+    border-radius: 15px;
+    padding: 1.5rem;
+
+    transition: all 0.3s ease;
+
+    overflow: hidden;
+}
+
+.skill-details {
+    max-height: 0;
+    opacity: 0;
+
+    transition:
+        max-height 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #a08cff;
+}
+
+.skill-card:hover .skill-details {
+    max-height: 200px;
+    opacity: 1;
+}
